@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="7acb67d7-50d7-4b40-86cb-6c67a69d4229">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[select * from khs]]>
+	</queryString>
+	<field name="npm" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nama" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ips1" class="java.lang.Double">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ips2" class="java.lang.Double">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ips3" class="java.lang.Double">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ips4" class="java.lang.Double">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ips5" class="java.lang.Double">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ips6" class="java.lang.Double">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ips7" class="java.lang.Double">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ipk" class="java.lang.Double">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="32" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="55" height="20" uuid="b2ee4575-0e4d-4c14-804b-9cd3d9aecb20"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[npm]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="55" y="0" width="55" height="20" uuid="3b7f9924-cb57-4e13-9d61-00a49aa23dd3"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[nama]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="110" y="0" width="55" height="20" uuid="f4f5271d-858f-4b31-9ac3-29229978c2eb"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[ips1]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="165" y="0" width="55" height="20" uuid="7febdeb2-c03d-49b2-b413-5fc04b138357"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[ips2]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="220" y="0" width="55" height="20" uuid="02d71a9a-7a84-462c-8b7a-fce99a9d478e"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[ips3]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="275" y="0" width="55" height="20" uuid="249ca9ac-046e-4e89-afae-db47d5ec8fc4"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[ips4]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="330" y="0" width="55" height="20" uuid="93fadc12-db62-49cc-a243-78e716053c80"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[ips5]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="385" y="0" width="55" height="20" uuid="75725323-f704-43f8-9b20-1f0bb2aac73b"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[ips6]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="440" y="0" width="55" height="20" uuid="b7145d20-5b81-4287-a632-6e93774094b2"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[ips7]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="495" y="0" width="55" height="20" uuid="d63d02a4-649d-4e44-98ba-70c449e25c82"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[ipk]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="31" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="55" height="20" uuid="f5f64b3c-2418-4490-be88-e2088b236396"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{npm}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="55" y="0" width="55" height="20" uuid="4764493d-6d74-4fa2-8d8f-935ff718421e"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{nama}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="110" y="0" width="55" height="20" uuid="53ea25ac-4221-4419-8ead-e9c94ac513aa"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{ips1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="165" y="0" width="55" height="20" uuid="4210b90e-5e88-4e8a-b8eb-24733c8a9655"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{ips2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="220" y="0" width="55" height="20" uuid="c331deeb-7e4a-45fa-9c37-e4226458c8a0"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{ips3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="275" y="0" width="55" height="20" uuid="6f64a30a-8174-4c34-9736-ea8b21700609"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{ips4}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="330" y="0" width="55" height="20" uuid="41b80b7b-4f9c-4661-95fd-326bc5ff3103"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{ips5}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="385" y="0" width="55" height="20" uuid="590c8c7b-3d9d-442d-97b0-c72e9b89b2fe"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{ips6}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="440" y="0" width="55" height="20" uuid="334628ec-94e7-4945-a476-9a479fe47ba1"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{ips7}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="495" y="0" width="55" height="20" uuid="6c130ab5-66f3-448c-b9a4-1bedecde0e66"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{ipk}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
