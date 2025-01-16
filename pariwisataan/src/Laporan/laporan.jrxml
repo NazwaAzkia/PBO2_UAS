@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="d6cad4d2-4ca1-4d07-9846-46cc34fca77e">
+	<property name="ireport.zoom" value="0.7513148009015781"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT * FROM wisata]]>
+	</queryString>
+	<field name="idwisata" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Nama" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Alamat" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Info" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Lokasi" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Tgl_buat" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Tgl_ubah" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="17" height="20" uuid="3c7fb67a-563b-49b1-a8c2-e2cc832e9c8d"/>
+				<text><![CDATA[ID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="31" y="0" width="66" height="20" uuid="fd0fc0c5-4b23-47c4-b294-bf916a45e80f"/>
+				<text><![CDATA[NAMA]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="97" y="0" width="93" height="20" uuid="b1c8ba77-9145-4570-98d3-5706ee84cebb"/>
+				<text><![CDATA[ALAMAT]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="190" y="0" width="105" height="20" uuid="28fb1a81-9e99-418e-a21d-f97013ad218d"/>
+				<text><![CDATA[INFORMASI]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="295" y="0" width="79" height="20" uuid="b23fae34-27f1-4911-b1e8-924d02b967ad"/>
+				<text><![CDATA[LOKASI]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="374" y="0" width="100" height="20" uuid="7fb9ba8f-3aaa-47dd-b40e-22b5ee09ede6"/>
+				<text><![CDATA[TANGGAL BUAT]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="474" y="0" width="100" height="20" uuid="0ea9ab30-cdf5-49b7-80d4-de2b4494eea5"/>
+				<text><![CDATA[TANGGAL UBAH]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="125" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="17" height="20" uuid="27534027-0ae6-499b-ab37-c366f2a28aea"/>
+				<textFieldExpression><![CDATA[$F{idwisata}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="31" y="0" width="66" height="20" uuid="51ac03a3-000a-4f87-9e81-8dd60b36e876"/>
+				<textFieldExpression><![CDATA[$F{Nama}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="90" y="0" width="100" height="20" uuid="58a848b3-c58e-4f1a-ba09-92fa93e9c5dc"/>
+				<textFieldExpression><![CDATA[$F{Alamat}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="190" y="0" width="100" height="20" uuid="91a90d49-4867-4085-b9d1-e31161729ffd"/>
+				<textFieldExpression><![CDATA[$F{Info}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="295" y="0" width="79" height="20" uuid="778cdb3f-8291-4e53-bd78-ddc1bbb91bce"/>
+				<textFieldExpression><![CDATA[$F{Lokasi}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="374" y="0" width="100" height="20" uuid="593b8ea4-ce8f-4885-8118-adeeddd5d7cd"/>
+				<textFieldExpression><![CDATA[$F{Tgl_buat}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="479" y="0" width="100" height="20" uuid="875549a4-9950-473c-92ff-ba12de978c69"/>
+				<textFieldExpression><![CDATA[$F{Tgl_ubah}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
